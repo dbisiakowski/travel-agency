@@ -155,9 +155,6 @@ def get_random_trip_by_duration(duration):
     trips_by_duration = [trip for trip in trips if trip['duration'] == duration]
     return trips_by_duration[r.randint(0, len(trips_by_duration) - 1)]
 
-trips_to_display = list(map(get_random_trip_by_duration, DURATIONS_TO_DISPLAY))
-
-
 def display_offers():
     for trip in trips_to_display:
         print('------------------------------------------')
@@ -168,6 +165,8 @@ def display_offers():
         print('Start date',trip['start_date'])
         print('Duration',trip['duration'])
         print('Board',trip['board'])
+
+trips_to_display = list(map(get_random_trip_by_duration, DURATIONS_TO_DISPLAY))
 
 display_offers()    
 
