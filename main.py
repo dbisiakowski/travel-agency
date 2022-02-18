@@ -191,7 +191,6 @@ while adults < 0:
     print('Wrong option.')
     adults = get_input_number()
 
-
 print('How many childrens')
 
 childrens = get_input_number()
@@ -199,7 +198,6 @@ childrens = get_input_number()
 while childrens < 0:
     print('Wrong option.')
     childrens = get_input_number()
-
 
 trip_price = picked_trip['price']
 full_price = round(trip_price * adults + (trip_price / 2) * childrens)
