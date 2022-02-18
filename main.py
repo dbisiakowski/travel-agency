@@ -202,8 +202,7 @@ while childrens < 0:
     childrens = get_input_number()
 
 
-print('Full price')
 trip_price = picked_trip['price']
-full_price = trip_price * adults + (trip_price / 2) * childrens
-print(full_price)
+full_price = round(trip_price * adults + (trip_price / 2) * childrens)
+print(f"You need pay {full_price} pln")
 
